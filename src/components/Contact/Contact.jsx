@@ -2,11 +2,12 @@ import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
+import AboutImg from '../Image/AboutImg';
 import Title from '../Title/Title';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
-  const { cta, btn, email } = contact;
+  const { img ,cta, btn, email } = contact;
 
   return (
     <section id="contact">
@@ -25,6 +26,10 @@ const Contact = () => {
             >
               {btn || "Let's Talk"}
             </a>
+          </div>
+          <br/>
+          <div>
+            <AboutImg alt="picture of me" filename={img} /> 
           </div>
         </Fade>
       </Container>

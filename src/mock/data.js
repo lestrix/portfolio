@@ -59,6 +59,7 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
+  img: 'foto-portfolio-small.jpg',
   cta: 'Interesse geweckt? Dann lass uns doch quatschen :]',
   btn: 'Jetzt kontaktieren',
   email: 'john.lester.kortmann@gmail.com',
